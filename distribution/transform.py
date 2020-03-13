@@ -24,7 +24,7 @@ class metadata_manager:
 
     def extract_data(self):
         # Load metadata excel
-        xl_file = pd.read_excel(self.input_file)
+        xl_file = pd.read_excel(self.input_file, sheet_name="PI_METADATA")
         return xl_file
 
     def write_data(self, df, filetype):
